@@ -14,7 +14,7 @@ SERPAPI_KEY = os.environ.get("SERPAPI_API_KEY", "")
 async def make_serpapi_request(params: dict) -> dict | None:
     """Make a request to the SerpApi endpoint with error handling."""
     params["api_key"] = SERPAPI_KEY
-    async with httpx.AsyncClient() as client:
+    async with httpx2.AsyncClient() as client:
         try:
             response = await client.get(SERPAPI_BASE, params=params, timeout=30.0)
             response.raise_for_status()
