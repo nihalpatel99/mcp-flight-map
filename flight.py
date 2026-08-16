@@ -9,7 +9,7 @@ mcp = MCPServer("flight")
 
 # Constants
 SERPAPI_BASE = "https://serpapi.com/search"
-SERPAPI_KEY = os.environ.get("SERPAPI_API_KEY", "")  # set this in your env, don't hardcode
+SERPAPI_KEY = os.environ.get("SERPAPI_API_KEY", "")  
 
 async def make_serpapi_request(params: dict) -> dict | None:
     """Make a request to the SerpApi endpoint with error handling."""
