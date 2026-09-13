@@ -27,8 +27,8 @@ def format_flight(flight: dict) -> str:
     """Format a flight offer into a readable string."""
     segments = flight.get("flights",[])
     first_leg = segments[0] if segments else {}
-    last_leg = segments[1] if segments else {}
-    dep = first_leg.get("departure airport", {})
+    last_leg = segments[-1] if segments else {}
+    dep = first_leg.get("departure_airport", {})
     arr = last_leg.get("arrival_airport", {})
     return f"""
 Airline: {first_leg.get("airline", "Unknown")}
