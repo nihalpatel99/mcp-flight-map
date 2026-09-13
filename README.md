@@ -1,4 +1,6 @@
-# flight
+# mcp-flight-map
+
+Demo Recording:- https://drive.google.com/file/d/1qRNfk_p79G89ST9OaEnpr1A2N-u7doKy/view?usp=sharing
 
 An [MCP](https://modelcontextprotocol.io) server that exposes flight search and Google Maps directions as tools, powered by [SerpApi](https://serpapi.com/).
 
